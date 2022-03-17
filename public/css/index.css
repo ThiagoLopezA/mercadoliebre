@@ -7,18 +7,18 @@
   padding: 0;
 }
 
-/*<-- Text -->*/
+/*<-- Text config -->*/
 .title {
   font-size: 24px;
 }
-.desc {
+.card-desc {
   font-size: 16px;
   color: #666;
 }
-.texto {
+.card-texto {
   font-size: 12px;
 }
-.descuento {
+.card-descuento {
   margin-left: 10px;
   font-size: 16px;
   color: #39d54a;
@@ -26,66 +26,92 @@
   width: 70%;
   font-weight: 500;
 }
-.precio {
+.card-precio {
   font-weight: 500;
   display: inline;
   width: 30%;
 }
+/* <-------------------> */
 
-/*<-- Header -->*/
+/* <-- Header --> */
 header {
   background-color: #eac926;
   padding: 20px;
-  text-align: center;
+}
+.navbar-bottom {
+  display: none;
 }
 .navbar-top {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+.navbar-logo {
+  width: 50%;
+  padding: 20px;
+}
+.navbar-searchArea {
+  align-self: center;
+  width: 50%;
+}
+.navbar-searchArea {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.navbar-searchArea input {
+  width: 80%;
+}
+.navbar-searchArea i {
+  position: absolute;
+  right: 12%;
+  font-size: 0.9rem;
+  color: #666;
+  z-index: 2;
 }
 .navbar-top p {
-  margin: 10px;
-}
-.logo {
-  width: 40%;
-}
-.searchInput {
-  display: flex;
-  width: 40%;
-}
-ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
-}
-ul div {
-  display: flex;
-}
-
-.navItem {
-  margin-left: 20px;
-  color: black;
-  text-decoration: none;
+  font-size: 1rem;
+  padding: 15px;
 }
 .burger-menu {
   background-color: #1259c3;
   color: white;
   font-size: 20px;
   border-radius: 3px;
-  padding: 6px 10px;
+  padding: 4px 8px;
   display: inline;
 }
+li {
+  list-style-type: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul div {
+  display: flex;
+}
+
+/* <------------> */
 
 /*<-- Section banner -->*/
-.banner {
+.section-banner {
   width: 100%;
 }
-.banner img {
+.section-banner img {
   width: 100%;
 }
+/* <-------------------> */
 
-/*<-- Main -->*/
+/* <-- Main --> */
 body {
   background-color: #ebebeb;
 }
@@ -107,14 +133,14 @@ main {
   width: 100%;
 }
 
-.datosArticulo {
+.card-datos {
   border-top: 1px solid #ebebeb;
   padding: 15px;
   width: 100%;
   position: relative;
 }
 
-.envio {
+.card-icon {
   display: block;
   border-radius: 50%;
   color: #39d54a;
@@ -124,9 +150,9 @@ main {
   right: 20px;
   top: -15px;
 }
+/* <----------> */
 
-/*<-- Footer -->*/
-
+/*<-- Section footer --> */
 footer {
   background-color: white;
   display: flex;
@@ -145,44 +171,26 @@ footer {
 .footerItem {
   margin: 8% 5%;
 }
+/*<------------>*/
 
-/* <-- Media querys --> */
-
-@media (min-width: 361px) {
-  .card .desc {
-    display: none;
-  }
-  ul {
-    display: none;
-  }
-}
-
-/*
-Media querys sizes:
-Smaller smarthphones -> 0-480
-Tablets & larger smarthphones -> 481-768
-Laptops,larger tablets, and small desktops -> 769 - 1279
-Larger desktops -> 1280+
-*/
-
-@media (min-width: 796px) {
+@media (min-width: 830px) {
   .articulos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .card .desc {
+  .card .card-desc {
     display: block;
+  }
+  .burger-menu {
+    display: none;
   }
   .card {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 35vw;
   }
-  .burger-menu {
-    display: none;
-  }
-  ul {
-    display: flex;
+  .navbar-bottom {
+    display: block;
   }
 }
 
@@ -197,13 +205,14 @@ Larger desktops -> 1280+
   .footerItem {
     width: 30%;
   }
-  .navbar-top .logo {
+  .navbar-logo {
     width: 30%;
   }
-  .navbar-top .searchInput {
+  .navbar-searchArea {
     width: 30%;
   }
   .navbar-top p {
     width: 30%;
+    align-self: center;
   }
 }
