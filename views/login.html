@@ -40,6 +40,7 @@
           tarjeta de crédito
         </p>
       </section>
+
       <section class="navbar-bottom">
         <nav>
           <ul>
@@ -69,6 +70,7 @@
           </ul>
         </nav>
       </section>
+
       <div class="burger-menu">
         <i class="fas fa-bars"></i>
       </div>
@@ -78,55 +80,14 @@
     <main>
       <!-- Inicio form -->
       <form class="form-config" action="">
-        <h2>Registrar cuenta</h2>
-        <input type="text" name="name" placeholder="Nombre y apellido" />
-        <input type="text" name="user" placeholder="Nombre de usuario" />
-        <label for="date" class="label-title">Fecha de nacimiento</label>
-        <input type="date" name="date" id="date" />
-        <label class="label-title">Perfil de usuario</label>
-        <div class="form-section-row">
-          <label class="label-subtitle" for="comprador">Comprador</label>
-          <input type="radio" name="profile" id="comprador" />
-          <label class="label-subtitle" for="vendedor">Vendedor</label>
-          <input type="radio" name="profile" id="vendedor" />
-        </div>
-        <label class="label-title">Intereses</label>
-        <div class="form-section-col">
-          <div>
-            <input type="checkbox" id="electro" name="categoria" />
-            <label for="electro">Electro</label>
-          </div>
-          <div>
-            <input type="checkbox" id="moda" name="categoria" />
-            <label for="moda">Moda</label>
-          </div>
-          <div>
-            <input type="checkbox" id="hogar" name="categoria" />
-            <label for="hogar">Hogar</label>
-          </div>
-          <div>
-            <input type="checkbox" id="jugueteria" name="categoria" />
-            <label for="jugueteria">Juguetería</label>
-          </div>
-          <div>
-            <input type="checkbox" id="vida-sana" name="categoria" />
-            <label for="vida-sana">Vida sana</label>
-          </div>
-        </div>
-        <label class="label-title" for="foto-usuario"
-          >Carga tu foto de usuario</label
-        >
-        <input type="file" name="foto-usuario" id="foto-usuario" />
-        <label class="label-title" for="password">Contraseña</label>
-        <input type="password" name="password" id="password" />
-        <div class="button-section">
-          <div>
-            <button class="btn-reset" type="reset">Reiniciar</button>
-          </div>
-          <div>
-            <button class="btn-submit" type="submit">Registrarme</button>
-          </div>
-        </div>
+        <h3>Iniciar sesión</h3>
+        <input
+          type="text"
+          placeholder="Nombre de usuario"
+          name="nombre-usuario"
+        />
+        <input type="password" placeholder="Contraseña" name="password" />
+        <button class="btn-submit">Enviar</button>
       </form>
       <!-- Fin form -->
     </main>

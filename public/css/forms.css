@@ -1,0 +1,58 @@
+/*<-- Form config -->*/
+.form-config {
+  margin: 1.5rem;
+}
+.form-config input {
+  margin-top: 5%;
+}
+.form-config .label-title {
+  margin-top: 5%;
+  display: block;
+  font-weight: 600;
+}
+.form-section-row {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+.form-section-row input {
+  margin: auto;
+}
+.form-section-col {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-section-col div {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+.form-section-col div input {
+  width: auto;
+  margin: 0 0.5rem;
+}
+.button-section {
+  display: flex;
+  width: 100%;
+}
+.button-section div {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+button {
+  border: none;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.3rem;
+  width: 100%;
+  color: white;
+}
+
+.btn-submit {
+  background-color: #1259c3;
+}
+.btn-reset {
+  background-color: #ff5252;
+}
