@@ -10,12 +10,14 @@
 /*<-- Text config -->*/
 .title {
   font-size: 1.5rem;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 1rem;
 }
+
 .card-desc {
   font-size: 16px;
   color: #666;
+  margin-top: 0.7rem;
+  display: none;
 }
 .card-texto {
   font-size: 12px;
@@ -107,6 +109,7 @@ li {
 a {
   color: #333333;
   text-decoration: none;
+  transition: color 0.5s;
 }
 a:hover {
   color: black;
@@ -169,6 +172,12 @@ main {
   right: 20px;
   top: -15px;
 }
+.card-icon i {
+  transition: 1500ms;
+}
+.card-icon i:hover {
+  transform: rotateZ(-90deg);
+}
 /* <----------> */
 
 /*<-- Section footer --> */
@@ -190,23 +199,39 @@ footer {
 .footerItem {
   margin: 8% 5%;
 }
+.footerItem-desc {
+  font-size: 16px;
+  color: #666;
+}
 /*<------------>*/
 
 @media (min-width: 830px) {
+  .icon {
+    transition: 1500ms;
+  }
+  .icon:hover {
+    color: #0022aa;
+  }
   .articulos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
   .card .card-desc {
+    transition: 2500ms;
+  }
+  .card:hover .card-desc {
     display: block;
   }
   .burger-menu {
     display: none;
   }
   .card {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 35vw;
+    transition: 500ms;
+  }
+  .card:hover {
+    box-shadow: 0px 5px 10px rgba(100, 100, 100, 0.5);
   }
   .navbar-bottom {
     display: block;
