@@ -87,16 +87,31 @@
 
     <main>
       <!-- Inicio form -->
-      <form class="form-config" action="">
-        <h3>Iniciar sesión</h3>
-        <input
-          type="text"
-          placeholder="Nombre de usuario"
-          name="nombre-usuario"
-        />
-        <input type="password" placeholder="Contraseña" name="password" />
-        <button class="btn-submit">Enviar</button>
-      </form>
+      <section class="form-wrapper">
+        <form class="form-config" action="">
+          <h3>¡Hola! Ingresá tu e-mail o usuario</h3>
+          <input
+            type="email"
+            placeholder="Usuario o e-mail"
+            name="nombre-usuario"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            name="password"
+            required
+          />
+          <div class="feedback">
+            <p>
+              <i class="fa-solid fa-triangle-exclamation"></i>Asegúrate de usar
+              la contraseña correcta.
+            </p>
+          </div>
+          <button class="btn-submit">Enviar</button>
+          <a href="/register">Crear cuenta</a>
+        </form>
+      </section>
       <!-- Fin form -->
     </main>
 

@@ -121,7 +121,7 @@ li {
 a {
   color: #333333;
   text-decoration: none;
-  transition: color 0.5s;
+  transition: color 200ms;
 }
 a:hover {
   color: black;
@@ -133,7 +133,9 @@ ul {
 ul div {
   display: flex;
 }
-
+.fa-hand-holding-dollar {
+  margin: auto 0.5rem;
+}
 /* <------------> */
 
 /*<-- Section banner -->*/
@@ -186,8 +188,8 @@ main {
 }
 .card-icon i {
   transition: 1500ms;
+  position: relative;
 }
-
 .card-icon i:hover {
   transform: rotateZ(-90deg);
 }
@@ -249,6 +251,13 @@ footer {
   }
   .navbar-bottom {
     display: block;
+  }
+  .ver-mas {
+    transition: 500ms;
+    cursor: pointer;
+  }
+  .ver-mas:hover {
+    background-color: #eac926;
   }
 }
 
