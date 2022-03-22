@@ -12,6 +12,15 @@
   font-size: 1.5rem;
   margin: 1rem;
 }
+.ver-mas {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+  border: 1px #666 solid;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
 
 .card-desc {
   font-size: 16px;
@@ -41,6 +50,9 @@
 header {
   background-color: #eac926;
   padding: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 .navbar-bottom {
   display: none;
@@ -175,9 +187,11 @@ main {
 .card-icon i {
   transition: 1500ms;
 }
+
 .card-icon i:hover {
   transform: rotateZ(-90deg);
 }
+
 /* <----------> */
 
 /*<-- Section footer --> */
