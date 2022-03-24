@@ -3,8 +3,6 @@ const app = express();
 const path = require("path");
 const publicPath = path.resolve(__dirname, "./public");
 
-// Room 4
-
 app.listen(process.env.PORT || 3030, () =>
   console.log("Web levantada con exito en el puerto 3030")
 );
